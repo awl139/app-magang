@@ -26,28 +26,26 @@ Project ini merupakan aplikasi web yang dibuat untuk mendukung proses administra
 
 ## Preview
 
-### Landing Page
+### Penilaian Perusahaan
+<img width="935" height="480" alt="image" src="https://github.com/user-attachments/assets/829e4e1d-5afd-4966-8eee-5ef49628ca05" />
 
-Tambahkan screenshot halaman utama di sini.
 
 ### Dashboard
 
 Tambahkan screenshot dashboard di sini.
 
 ### Form Pendaftaran
+<img width="937" height="501" alt="image" src="https://github.com/user-attachments/assets/8ac37a87-adba-4d08-8ce7-22f147a0c307" />
 
-Tambahkan screenshot form pendaftaran di sini.
 
 ### Sertifikat
+<img width="955" height="499" alt="image" src="https://github.com/user-attachments/assets/e7e9b69d-f0a2-4fb3-88cc-c9f87703c242" />
 
-Tambahkan screenshot halaman sertifikat di sini.
+
+### Data
+<img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/1a4e0fe6-3618-49fd-a6c8-6dc47d23745c" />
+
 
 ## 🎯 Tujuan Project
 
 Project ini dibuat sebagai media pembelajaran untuk menerapkan dasar-dasar pengembangan website, khususnya dalam pembuatan interface, struktur halaman, navigasi, serta responsive web design.
-
-## 📂 Status Project
-
-**Status:** Completed — Academic Project
-
-Project saat ini dapat dijalankan secara lokal dan source code tersedia di repository ini.
