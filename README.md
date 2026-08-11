@@ -30,9 +30,9 @@ Project ini merupakan aplikasi web yang dibuat untuk mendukung proses administra
 <img width="935" height="480" alt="image" src="https://github.com/user-attachments/assets/829e4e1d-5afd-4966-8eee-5ef49628ca05" />
 
 
-### Dashboard
+### Landing Page
+<img width="956" height="509" alt="image" src="https://github.com/user-attachments/assets/e90d2ec5-f011-4b75-b04f-989c44664735" />
 
-Tambahkan screenshot dashboard di sini.
 
 ### Form Pendaftaran
 <img width="937" height="501" alt="image" src="https://github.com/user-attachments/assets/8ac37a87-adba-4d08-8ce7-22f147a0c307" />
