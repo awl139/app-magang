@@ -1,80 +1,419 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Landing Page Magang</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #d653f5;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    .main-container {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 2rem 1rem;
-    }
-    .title {
-      color: rgb(241, 155, 228);
-      font-size: 1.2rem;
-      font-weight: 600;
-    }
-    .subtitle {
-      font-size: 1.5rem;
-      font-weight: 400;
-    }
-    .auth-links a {
-      color: black;
-      margin: 0 10px;
-      text-decoration: underline;
-      font-weight: 500;
-    }
-    .auth-links a:hover {
-      text-decoration: none;
-    }
-    .footer-logo {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .footer-text {
-      color: black;
-      font-size: 0.9rem;
-      margin-top: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Magang - D3 Teknik Informatika</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #8e2de2, #c43bea);
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Navbar */
+        nav {
+            width: 100%;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn-login {
+            border: 1px solid white;
+        }
+
+        .btn-daftar {
+            background-color: white;
+            color: #8e2de2 !important;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 580px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            padding: 50px 8%;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: #f7d8ff;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #f5e8fa;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .hero-buttons a {
+            text-decoration: none;
+            padding: 13px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: #8e2de2;
+        }
+
+        .btn-secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        /* Illustration */
+        .hero-image {
+            width: 420px;
+            height: 330px;
+            background-color: rgba(255, 255, 255, 0.12);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .illustration {
+            text-align: center;
+        }
+
+        .illustration-icon {
+            font-size: 90px;
+            margin-bottom: 15px;
+        }
+
+        .illustration h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .illustration p {
+            color: #f1dff5;
+        }
+
+        /* Features */
+        .features {
+            background-color: white;
+            color: #333;
+            padding: 60px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #6e328a;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .feature-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .feature-card {
+            background-color: #faf5fc;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #ead8f0;
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(110, 50, 138, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #6e328a;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #54236c;
+            text-align: center;
+            padding: 25px;
+            color: #eee;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                padding: 20px;
+            }
+
+            .nav-links {
+                gap: 5px;
+            }
+
+            .nav-links a {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                width: 100%;
+                max-width: 400px;
+                height: 280px;
+            }
+
+            .feature-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+            .nav-links a {
+                padding: 7px 10px;
+                font-size: 12px;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons a {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container main-container">
-    <!-- Header -->
-    <div>
-      <div class="title mb-2">APLIKASI MAGANG</div>
-      <div class="subtitle mb-4">PROGRAM STUDI<br>D3 TEKNIK INFORMATIKA</div>
-    </div>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo-text">
+            🎓 Aplikasi Magang
+        </div>
 
-    <!-- Ilustrasi -->
-    <div>
-      <img src="bg.png" alt="Ilustrasi Magang" class="img-fluid" style="max-height: 250px;">
-    </div>
+        <div class="nav-links">
+            <a href="login.html" class="btn-login">Login</a>
+            <a href="signup.html" class="btn-daftar">Daftar</a>
+        </div>
+    </nav>
 
-    <!-- Sign Up / Log In -->
-    <div class="auth-links my-3">
-      <a href="signup.html">Sign Up</a> | <a href="login.html">Log In</a>
-    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Kelola Kegiatan
+                <span>Magang</span>
+                Lebih Mudah
+            </h1>
+
+            <p>
+                Platform digital untuk membantu mahasiswa dalam
+                mengelola proses pendaftaran, kegiatan, penilaian,
+                hingga sertifikat magang secara lebih terstruktur.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="signup.html" class="btn-primary">
+                    Mulai Sekarang
+                </a>
+
+                <a href="#fitur" class="btn-secondary">
+                    Lihat Fitur
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Illustration -->
+        <div class="hero-image">
+
+            <!-- Kalau punya gambar/ilustrasi sendiri,
+                 ganti bagian ini dengan <img> -->
+
+            <div class="illustration">
+                <div class="illustration-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Program Studi D3
+                    Teknik Informatika
+                </h3>
+
+                <p>
+                    Sistem Informasi Magang
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="fitur">
+
+        <div class="section-title">
+            <h2>Fitur Utama</h2>
+            <p>
+                Semua kebutuhan administrasi magang dalam satu sistem
+            </p>
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+
+                <h3>Pendaftaran Magang</h3>
+
+                <p>
+                    Mahasiswa dapat mengajukan dan mengelola
+                    pendaftaran magang secara online.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+
+                <h3>Penilaian</h3>
+
+                <p>
+                    Memudahkan proses penilaian dan pemberian
+                    komentar dari perusahaan.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📜</div>
+
+                <h3>Sertifikat</h3>
+
+                <p>
+                    Sertifikat magang dapat ditampilkan dan
+                    dicetak setelah seluruh proses selesai.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- Footer -->
-    <div class="text-center">
-      <img src="amikom.jpg" alt="Logo" class="footer-logo">
-      <div class="footer-text">Universitas Amikom Yogyakarta</div>
-    </div>
-  </div>
+    <footer>
+        © 2025 Program Studi D3 Teknik Informatika -
+        Universitas Amikom Yogyakarta
+    </footer>
 
 </body>
 </html>
