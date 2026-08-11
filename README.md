@@ -1,21 +1,21 @@
-# 🎓 Sistem Informasi Magang
+# Sistem Informasi Magang
 
 Website sistem informasi magang yang dirancang untuk membantu proses pendaftaran dan pengelolaan kegiatan magang mahasiswa secara lebih terstruktur.
 
-## 📌 Tentang Project
+## Tentang Project
 
 Project ini merupakan aplikasi web yang dibuat untuk mendukung proses administrasi magang mahasiswa, mulai dari pendaftaran hingga pengelolaan data dan dokumen magang.
 
 ## Fitur
 
-* 🏠 Landing Page
-* 🔐 Login & Sign Up
-* 📋 Form Pendaftaran Magang
-* 📊 Dashboard Mahasiswa
-* ✅ Proses Approval Pendaftaran
-* 📝 Penilaian Magang
-* 📄 Laporan Magang
-* 🎓 Sertifikat Magang
+*  Landing Page
+*  Login & Sign Up
+*  Form Pendaftaran Magang
+*  Dashboard Mahasiswa
+*  Proses Approval Pendaftaran
+*  Penilaian Magang
+*  Laporan Magang
+*  Sertifikat Magang
 
 ## Teknologi yang Digunakan
 
@@ -47,6 +47,6 @@ Project ini merupakan aplikasi web yang dibuat untuk mendukung proses administra
 <img width="947" height="503" alt="image" src="https://github.com/user-attachments/assets/1a4e0fe6-3618-49fd-a6c8-6dc47d23745c" />
 
 
-## 🎯 Tujuan Project
+## Tujuan Project
 
 Project ini dibuat sebagai media pembelajaran untuk menerapkan dasar-dasar pengembangan website, khususnya dalam pembuatan interface, struktur halaman, navigasi, serta responsive web design.
