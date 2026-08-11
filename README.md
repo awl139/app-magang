@@ -31,7 +31,8 @@ Project ini merupakan aplikasi web yang dibuat untuk mendukung proses administra
 
 
 ### Landing Page
-<img width="956" height="509" alt="image" src="https://github.com/user-attachments/assets/e90d2ec5-f011-4b75-b04f-989c44664735" />
+<img width="941" height="499" alt="image" src="https://github.com/user-attachments/assets/826859c9-b8a0-4aa9-8bd2-aa974638e1c5" />
+
 
 
 ### Form Pendaftaran
